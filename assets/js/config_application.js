@@ -3,14 +3,21 @@ requirejs.config({
   urlArgs: "bust=" +  (new Date()).getTime(),
   paths: {
     jquery: "../vendor/jquery-2.1.4.min",
+    "jquery-ui": "../vendor/jquery-ui-1.11.4/jquery-ui.min",
     json3: "../vendor/json3.min",
     underscore: "../vendor/underscore-min",
     backbone: "../vendor/backbone/backbone-min",
-    marionette: "../vendor/backbone.marionette/backbone.marionette.min"
+    marionette: "../vendor/backbone.marionette/backbone.marionette.min",
+    localstorage: "../vendor/backbone/backbone.localstroage-min",
+
+    application: "../js"
   },
   shim: {
     underscore: {
       exports: "_"
+    },
+    "jquery-ui": {
+      deps: ["jquery"]
     },
     backbone: {
       deps: ["jquery", "underscore", "json3"],
@@ -22,11 +29,8 @@ requirejs.config({
     }
   }
 });
-require(["jquery", "underscore", "backbone", "marionette"], function($, _, B, M){
-  console.log(B);
-  console.log(Backbone);
-  console.log("Backbone.history: ", B.history);
-  console.log("jQuery version: ", $.fn.jquery);
-  console.log("underscore identity call: ", _.identity("underscore"));
-  console.log("Marionette: ", M);
+require(["application/application"], function(Application){
+  //Application.initialize();
+  Application.start();
+  console.log('app.start');
 });
