@@ -1,6 +1,6 @@
-define("ContactsCollection", ["backbone", "localstorage"], function(B) {
+define(["backbone", "localstorage"], function(B) {
 
-  var ContactsCollectionClass = B.Extend({
+  var ContactsCollectionClass = Backbone.Collection.extend({
      localStorage: new Backbone.LocalStorage("contacts:entities")
   });
 

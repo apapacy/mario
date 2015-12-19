@@ -11,11 +11,14 @@ define(["jquery", "underscore", "backbone", "marionette",
 
   var ContactManager = new M.Application();
   console.log(ContactManager)
-  ContactManager.on("befor:start", function(event){
-    console.log(event);
+  ContactManager.on("before:start", function(event){
     console.log("ContactManager try to start");
     B.history.start()
-    this.contacts = new ConntactsCollection();
+    this.contacts = new ContactsCollection();
+    this.contacts.add({id:16, naem:'Joe-16'});
+    this.contacts.models[0].save();
+    this.contacts.fetch();
+    console.log(this.contacts);
 
 
   });

@@ -8,7 +8,7 @@ requirejs.config({
     underscore: "../vendor/underscore-min",
     backbone: "../vendor/backbone/backbone-min",
     marionette: "../vendor/backbone.marionette/backbone.marionette.min",
-    localstorage: "../vendor/backbone/backbone.localstroage-min",
+    localstorage: "../vendor/backbone/backbone.localStorage-min",
 
     application: "../js"
   },
