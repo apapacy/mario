@@ -1,7 +1,9 @@
 define(["jquery", "underscore", "backbone", "marionette",
+  "application/views/admin/layoutView",
   "application/regions/dialog",
-  "application/entities/contacts"],
-  function($, _, B, M, dialogRegion, ContactsCollection ){
+  "application/entities/contacts",
+  "application/helpers"],
+  function($, _, B, M, adminLayoutView, dialogRegion, ContactsCollection ){
   console.log(B);
   console.log(Backbone);
   console.log("Backbone.history: ", B.history);
@@ -19,8 +21,6 @@ define(["jquery", "underscore", "backbone", "marionette",
     this.contacts.models[0].save();
     this.contacts.fetch();
     console.log(this.contacts);
-
-
   });
 
   ContactManager.addRegions({
@@ -35,7 +35,7 @@ define(["jquery", "underscore", "backbone", "marionette",
     options || (options = {});
     Backbone.history.navigate(route, options);
   };
-
+  adminLayoutView.render();
   return ContactManager;
 
 });
