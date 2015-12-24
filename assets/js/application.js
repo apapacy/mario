@@ -1,26 +1,16 @@
 define(["jquery", "underscore", "backbone", "marionette",
   "application/views/admin/layoutView",
   "application/regions/dialog",
-  "application/entities/contacts",
-  "application/helpers"],
-  function($, _, B, M, adminLayoutView, dialogRegion, ContactsCollection ){
-  console.log(B);
-  console.log(Backbone);
-  console.log("Backbone.history: ", B.history);
-  console.log("jQuery version: ", $.fn.jquery);
-  console.log("underscore identity call: ", _.identity("underscore"));
-  console.log("Marionette: ", M);
+/*"application/entities/contacts",*/],
+  function($, _, Backbone, Marionette, adminLayoutView, dialogRegion, ContactsCollection ){
 
-  var ContactManager = new M.Application();
-  console.log(ContactManager)
+  var ContactManager = new Marionette.Application();
   ContactManager.on("before:start", function(event){
-    console.log("ContactManager try to start");
-    B.history.start()
+    Backbone.history.start()
     this.contacts = new ContactsCollection();
     this.contacts.add({id:16, naem:'Joe-16'});
     this.contacts.models[0].save();
     this.contacts.fetch();
-    console.log(this.contacts);
   });
 
   ContactManager.addRegions({
@@ -35,7 +25,7 @@ define(["jquery", "underscore", "backbone", "marionette",
     options || (options = {});
     Backbone.history.navigate(route, options);
   };
-  adminLayoutView.render({rand:17});
+  adminLayoutView.render();
   return ContactManager;
 
 });
