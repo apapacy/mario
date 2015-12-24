@@ -1,5 +1,5 @@
-define(['application/helpers/twigHelper'], function(twigHelper) {
+define([], function() {
   return {
-    twigHelper: twigHelper
+
   };
 });

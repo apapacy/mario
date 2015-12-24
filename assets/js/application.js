@@ -35,7 +35,7 @@ define(["jquery", "underscore", "backbone", "marionette",
     options || (options = {});
     Backbone.history.navigate(route, options);
   };
-  adminLayoutView.render();
+  adminLayoutView.render({rand:17});
   return ContactManager;
 
 });

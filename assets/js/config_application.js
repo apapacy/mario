@@ -8,11 +8,14 @@ requirejs.config({
     underscore: "../vendor/underscore-min",
     backbone: "../vendor/backbone/backbone-min",
     marionette: "../vendor/backbone.marionette/backbone.marionette.min",
-    twig: "../vendor/twig.js/twig.min",
-    text: "../vendor/text.js",
+    twigjs: "../vendor/twig.js/twig.min",
+    twig: "../js/helpers/twigLoader",
+    text: "../vendor/text",
+    templates: "./templates",
     localstorage: "../vendor/backbone/backbone.localStorage-min",
 
-    application: "../js"
+    application: "../js",
+    templates: "../js/templates"
   },
   shim: {
     underscore: {
