@@ -1,0 +1,24 @@
+{
+  "name": "mario",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "dependencies": {
+    "amdlc": "^0.1.6",
+    "cli": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apapacy/mario.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apapacy/mario/issues"
+  },
+  "homepage": "https://github.com/apapacy/mario#readme"
+}

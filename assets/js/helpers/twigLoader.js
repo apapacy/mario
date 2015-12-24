@@ -1,10 +1,9 @@
-'use strict';
-define(['marionette', 'twigjs', "text", "jquery"], function(Marionette, Twig, text) {
+define(['marionette', 'twigjs'], function f1(Marionette, Twig) {
 
   var GUID = "{BA9B921C-B7C0-4313-BC13-30DC301C1D6E}";
 
   if (typeof Marionette.Renderer.render[GUID] !== "object") {
-    Marionette.Renderer.render = function(template, data) {
+    Marionette.Renderer.render = function f2(template, data) {
       return template.render(data);
     }
     Marionette.Renderer.render[GUID] = {};
@@ -19,7 +18,7 @@ define(['marionette', 'twigjs', "text", "jquery"], function(Marionette, Twig, te
       return;
     }
 
-    function innderRender(templateContent, baseContent, Marionette, Twig) {
+    function innerRender(templateContent, baseContent, Marionette, Twig) {
       return innerFullRender(templateContent, null, Marionette, Twig);
     }
 
@@ -67,10 +66,13 @@ define(['marionette', 'twigjs', "text", "jquery"], function(Marionette, Twig, te
       resourcePath: resourcePath,
       baseTemplate: baseTemplate
     };
-  };
+  }
 
-  return {
-    load: loadResource
-  };
+  return ({
+    load: loadResource,
+    normalize: function (name, normalize) {
+         return name;
+     }
+  });
 
 });

@@ -4,11 +4,12 @@ requirejs.config({
   optimize: 'none',
   paths: {
     jquery: "../vendor/jquery-1.11.3.min",
-    "jquery-ui": "../vendor/jquery-ui-1.11.4/jquery-ui.min",
+    //"jquery-ui": "../vendor/jquery-ui-1.11.4/jquery-ui.min",
     json3: "../vendor/json3.min",
+    //jquery: "../vendor/zepto",
     underscore: "../vendor/underscore-min",
-    backbone: "../vendor/backbone/backbone-min",
-    marionette: "../vendor/backbone.marionette/backbone.marionette.min",
+    backbone: "../vendor/backbone/backbone-dev",
+    marionette: "../vendor/backbone.marionette/backbone.marionette",
     twigjs: "../vendor/twig.js/twig.min",
     twig: "../js/helpers/twigLoader",
     text: "../vendor/text",
@@ -19,23 +20,26 @@ requirejs.config({
     templates: "../js/templates"
   },
   shim: {
-    underscore: {
-      exports: "_"
-    },
-    "jquery-ui": {
-      deps: ["jquery"]
-    },
+    //underscore: {
+      //exports: "_"
+    //},
+    //"jquery-ui": {
+  //    deps: ["jquery"]
+  //  },
+  twig: {
+    deps: ["backbone", "marionette"]
+  },
     backbone: {
-      deps: ["underscore", "json3"],
+      deps: ["underscore", "jquery"],
       //exports: "Backbone"
     },
     marionette: {
       deps: ["backbone"],
       //exports: "Marionette"
     },
-    twigjs: {
-      exports: "Twig"
-    }
+    //twigjs: {
+  //    exports: "Twig"
+  //  }
   }
 });
 require(["application/application"], function(Application){

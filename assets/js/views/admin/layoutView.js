@@ -1,12 +1,12 @@
-define(["marionette","twig!admin/layout:baseLayout", "twig!admin/layout:baseLayout", "jquery"], function(Marionette, adminLayout, al, $) {
+define(["marionette","twig!admin/layout:baseLayout", "twig!admin/layout:baseLayout"], function(Marionette, adminLayout, al) {
   var bb = (new (Marionette.LayoutView.extend({
     template: al,
-    el: $('#div')
+    el: '#div'
   })))
   //bb.model=new Backbone.Model({rand: Math.random()});
   bb.render();
   return new (Marionette.LayoutView.extend({
     template: adminLayout,
-    el: $('#head')
+    el: '#head'
   }));
 });
