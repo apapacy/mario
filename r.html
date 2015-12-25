@@ -10,6 +10,8 @@
     <script src="r.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function (evt) {
+
+
         document.getElementById('build').addEventListener('click', function (evt) {
             requirejs.optimize({
             baseUrl: "./assets/js",
@@ -29,7 +31,21 @@
                 document.getElementById('buildMessages').value = buildText;
             });
         }, false);
+
+
+        document.getElementById('print').addEventListener('click', function (evt) {
+          var output = document.getElementById('output').value;
+          var out = window.open("output.js","output.js");
+          alert("next>>")
+          out.document.open("text/plain", false)
+          out.document.write(output)
+          out.document.close()
+        }, false);
+
+
     }, false);
+
+
     </script>
 </head>
 <body>
@@ -47,5 +63,9 @@
 
     <h2>Output</h2>
     <textarea id="output"></textarea>
+    <p>
+        <button id="print">Print it</button>
+    </p>
+
 </body>
 </html>
