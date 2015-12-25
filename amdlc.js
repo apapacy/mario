@@ -1,4 +1,4 @@
-require("requirejs");;
+require("requirejs");
 var amdlc=require("amdlc");
 amdlc.compile({
     from: "config_application.js",

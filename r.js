@@ -1218,7 +1218,6 @@ var requirejs, require, define, xpcUtil;
                     if (this.map.unnormalized) {
                         //Normalize the ID if the plugin allows it.
                         if (plugin.normalize) {
-                          console.log(plugin)
                             name = plugin.normalize(name, function (name) {
                                 return normalize(name, parentName, true);
                             }) || '';

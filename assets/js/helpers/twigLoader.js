@@ -1,4 +1,4 @@
-define(['marionette', 'twigjs'], function f1(Marionette, Twig) {
+define(['marionette', 'twigjs'], function f1(Mar, Twig) {
 
   var GUID = "{BA9B921C-B7C0-4313-BC13-30DC301C1D6E}";
 
@@ -18,11 +18,11 @@ define(['marionette', 'twigjs'], function f1(Marionette, Twig) {
       return;
     }
 
-    function innerRender(templateContent, baseContent, Marionette, Twig) {
-      return innerFullRender(templateContent, null, Marionette, Twig);
+    function innerRender(templateContent,  Mar, Twig) {
+      return innerFullRender(templateContent, null, Mar, Twig);
     }
 
-    function innerFullRender(templateContent, baseContent, Marionette, Twig) {
+    function innerFullRender(templateContent, baseContent, Mar, Twig) {
       if (baseContent) {
         Marionette.Renderer.render[GUID][baseTemplate] = Twig.twig(
           {
