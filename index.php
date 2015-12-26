@@ -10,6 +10,6 @@
   <body>
     <div id=head></div>
     <div id=div></div>
-    <script data-main="./assets/js/config_application.js" src="./assets/vendor/require.js"></script>
+    <script data-main0="rjs.build.js" data-main="./assets/js/config_application.js" src="./assets/vendor/require.js"></script>
   </body>
 </html>
