@@ -1,4 +1,4 @@
-define(['marionette', 'twigjs'], function (Marionette, Twig) {
+define(['marionette', 'twigjs', 'lodash'], function defined (Marionette, Twig, _) {
 
   var GUID = "{BA9B921C-B7C0-4313-BC13-30DC301C1D6E}";
 
@@ -14,13 +14,16 @@ define(['marionette', 'twigjs'], function (Marionette, Twig) {
       callback(Marionette.Renderer.render[GUID][resourcePath]);
       return;
     }
-    parentRequire([ "text!" + "templates/" + resourcePath + ".twig"
+    parentRequire.call(defined,[ "text!" + "templates/" + resourcePath + ".twig"
       , 'helpers/same!' + resourcePath
       , 'marionette'
       , 'twigjs']
       , reqursiveRender);
 
+    var stock = [resourcePath];
+
     function reqursiveRender(templateContent, templatePath, Marionette, Twig) {
+      _.pull(stock, templatePath);
       if (!Marionette.Renderer.render[GUID][templatePath]) {
         Marionette.Renderer.render[GUID][templatePath] = Twig.twig(
          {
@@ -28,29 +31,33 @@ define(['marionette', 'twigjs'], function (Marionette, Twig) {
            //base: baseTemplate,
            data: templateContent,
            allowInlineIncludes: true
+
          }
         );
       }
-      var matches = /{%[\s]*extends[\s+]["|']([\S]+)['|"][\s]*%}/.exec(templateContent);
-      if (matches) {
-        if (!Marionette.Renderer.render[GUID][matches[1]]) {
-          parentRequire([ "text!" + "templates/" + matches[1] + ".twig"
-            , 'helpers/same!' + matches[1]
+      var regexp = /{%[\s]*(include|extends)[\s+]["|']([^''""]+)['|"][\s]*%}/g;
+      while (matches = regexp.exec(templateContent)) {
+        if (!Marionette.Renderer.render[GUID][matches[2]]) {
+          stock.push(matches[2]);
+          parentRequire([ "text!" + "templates/" + matches[2] + ".twig"
+            , 'helpers/same!' + matches[2]
             , 'marionette'
             , 'twigjs' ]
             , reqursiveRender);
+        } else {
+          _.pull(stock, matches[2]);
         }
-      } else {
+      }
+      if (!stock.length) {
         callback(Marionette.Renderer.render[GUID][resourcePath]);
       }
     }
-
   }
-
   return ({
     load: loadResource,
     normalize: function (name, normalize) {
          return name;
      }
   });
+
 });

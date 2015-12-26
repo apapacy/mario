@@ -14,7 +14,7 @@ requirejs.config({
     "text": "../vendor/text",
     "templates": "./templates",
     "localstorage": "../vendor/backbone/backbone.localStorage-min",
-
+    "lodash": "../vendor/lodash.min",
     "application": "./"
   },
 
