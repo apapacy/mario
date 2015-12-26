@@ -8,6 +8,7 @@ define(["marionette", "backbone", "twig!admin/main", "twig!admin/main"]
   bb.render();
   return new (Marionette.LayoutView.extend({
     template: adminLayout,
+    model: {toJSON:function(){return({rand:Math.random()})}},
     el: '#head'
   }));
 });
