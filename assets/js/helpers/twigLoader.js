@@ -1,6 +1,6 @@
 define(['marionette', 'twigjs', 'lodash'], function defined (Marionette, Twig, _) {
   var GUID = "{BA9B921C-B7C0-4313-BC13-30DC301C1D6E}";
-  window[GUID] = [];
+  window[GUID] = "";
   if (typeof Marionette.Renderer.render[GUID] !== "object") {
     Marionette.Renderer.render = function(template, data) {
       return template.render(data);
@@ -19,7 +19,7 @@ define(['marionette', 'twigjs', 'lodash'], function defined (Marionette, Twig, _
       , reqursiveRender);
     var stock = [resourcePath];
     function reqursiveRender(templateContent, templatePath, Marionette, Twig) {
-      window[GUID].push("text!" + "templates/" + templatePath  + ".twig");
+      window[GUID] += (",\n'text!" + "templates/" + templatePath  + ".twig'");
       _.pull(stock, templatePath);
       if (!Marionette.Renderer.render[GUID][templatePath]) {
         Marionette.Renderer.render[GUID][templatePath] = Twig.twig(
