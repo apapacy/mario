@@ -1,5 +1,4 @@
 define(['marionette', 'twigjs', 'lodash'], function defined (Marionette, Twig, _) {
-
   var GUID = "{BA9B921C-B7C0-4313-BC13-30DC301C1D6E}";
   window[GUID] = [];
   if (typeof Marionette.Renderer.render[GUID] !== "object") {
@@ -8,20 +7,17 @@ define(['marionette', 'twigjs', 'lodash'], function defined (Marionette, Twig, _
     }
     Marionette.Renderer.render[GUID] = {};
   }
-
   function loadResource(resourcePath, parentRequire, callback, config) {
     if (Marionette.Renderer.render[GUID][resourcePath]) {
       callback(Marionette.Renderer.render[GUID][resourcePath]);
       return;
     }
-    parentRequire.call(defined,[ "text!" + "templates/" + resourcePath + ".twig"
+    parentRequire([ "text!" + "templates/" + resourcePath + ".twig"
       , 'helpers/same!' + resourcePath
       , 'marionette'
       , 'twigjs']
       , reqursiveRender);
-
     var stock = [resourcePath];
-
     function reqursiveRender(templateContent, templatePath, Marionette, Twig) {
       window[GUID].push("text!" + "templates/" + templatePath  + ".twig");
       _.pull(stock, templatePath);
@@ -61,5 +57,4 @@ define(['marionette', 'twigjs', 'lodash'], function defined (Marionette, Twig, _
          return name;
      }
   });
-
 });

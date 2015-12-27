@@ -1,14 +1,16 @@
-define(["marionette", "backbone", "twig!admin/main", "twig!admin/main"]
-  , function(Marionette, Backbone, adminLayout, al) {
-  var bb = (new (Marionette.LayoutView.extend({
-    template: al,
-    el: '#div'
-  })))
-  bb.model=new Backbone.Model({rand: Math.random()});
-  bb.render();
-  return new (Marionette.LayoutView.extend({
+define(["marionette", "backbone", "twig!admin/layout", "twig!admin/leftside"]
+  , function(Marionette, Backbone, adminLayout, adminLeftside) {
+  var layoutView = new (Marionette.LayoutView.extend({
     template: adminLayout,
-    model: {toJSON:function(){return({rand:Math.random()})}},
-    el: '#head'
+    el: "body",
   }));
+  layoutView.init = function() {
+    layoutView.render();
+    layoutView.addRegion( "leftside", "#leftside");
+    var leftSideView = new (Marionette.LayoutView.extend({
+      template: adminLeftside,
+    }));
+    layoutView.getRegion("leftside").show(leftSideView, {});
+  }
+  return layoutView;
 });

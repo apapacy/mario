@@ -23,7 +23,24 @@
             //optimize: 'none',
             //optimizeAllPluginResources: false,
             //stubModules : ['text', 'twig','jquery','backbone','marionette','underscore'],
-                //include: ['a'],
+                include: [
+
+                  "text!templates/admin/main.twig"
+                  ,
+
+                  	"text!templates/admin/layout.twig"
+                  ,
+
+                  	"text!templates/baseLayout.twig"
+                  ,
+
+                  	"text!templates/admin/includes/test.twig"
+                  ,
+
+                  	"text!templates/admin/includes/layout.twig"
+
+
+                ],
                 out: function (text) {
                     document.getElementById('output').value = text;
                 }

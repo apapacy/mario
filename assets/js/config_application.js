@@ -43,5 +43,5 @@ requirejs.config({
 
 });
 require(["application/application"], function(Application){
-  Application.start();
+  //Application.start();
 });

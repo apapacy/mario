@@ -1,10 +1,11 @@
-define(["marionette",
+define(["marionette", "backbone",
   "application/views/admin/layoutView"
   ],
-  function(Marionette, adminLayoutView, dialogRegion){
+  function(Marionette, Backbone, adminLayoutView) {
 
-  var ContactManager = new Marionette.Application();
-  ContactManager.on("before:start", function(event){
+  var Application = new Marionette.Application();
+  Application.on("before:start", function(event){
+    console.log("start")
     Backbone.history.start()
     /*this.contacts = new ContactsCollection();
     this.contacts.add({id:16, naem:'Joe-16'});
@@ -20,11 +21,12 @@ define(["marionette",
     })
   });*/
 
-  ContactManager.navigate = function(route, options) {
+  Application.navigate = function(route, options) {
     options || (options = {});
     Backbone.history.navigate(route, options);
   };
-  adminLayoutView.render();
-  return ContactManager;
+  Application.start();
+  adminLayoutView.init();
+  return Application;
 
 });
