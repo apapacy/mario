@@ -1,11 +1,9 @@
-define(["marionette"
-  , "backbone"
+define(["marionette", "backbone"
   , "twig!admin/layout"
   , "application/views/admin/leftSideView"
   , "application/views/admin/mainView"
   , "application/views/admin/rightSideView"]
-, function(Marionette
-  , Backbone
+, function(Marionette, Backbone
   , adminLayout
   , adminLeftSideView
   , adminMainView
