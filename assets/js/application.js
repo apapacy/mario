@@ -1,5 +1,6 @@
 define(["marionette", "backbone",
-  "application/views/admin/layoutView"]
+  "application/views/admin/layoutView",
+  "application/routers/admin/layoutRouter"]
 , function(Marionette, Backbone
     , adminLayoutView) {
 
@@ -28,7 +29,7 @@ define(["marionette", "backbone",
     };
 
     Application.start();
-
+    Application.navigate("rest/19");
     return Application;
 
   }
