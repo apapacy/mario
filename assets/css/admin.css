@@ -8,7 +8,7 @@
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content>div{
   height: 80vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 /* Set gray background color and 100% height */
