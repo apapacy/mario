@@ -436,6 +436,19 @@ class MY_SimpleREST_Controller extends MY_REST_Controller {
   	parent::_delete( static::$FIELDS, $id, 'id' , $print );
   }
 
+  public function read_collection($options) {
+    /*protected function _read_collection( $fields,
+                          $print=true,
+                          $order=false,
+                          $where=false,
+                          $limit=false,
+                          $offset=false,
+                          $undefined=false,
+                          $merge = array( ) )*/
+
+    parent::_read_collection (static::$FIELDS, true, implode(',' ,static::$ORDER), false, 100);
+  }
+
 
 }
 

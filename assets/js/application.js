@@ -7,7 +7,7 @@ define(["marionette", "backbone",
     var Application = new Marionette.Application();
 
     Application.on("before:start", function(event){
-      Backbone.history.start()
+      Backbone.history.start({})
       adminLayoutView.init();
       /*this.contacts = new ContactsCollection();
       this.contacts.add({id:16, naem:'Joe-16'});
@@ -29,7 +29,8 @@ define(["marionette", "backbone",
     };
 
     Application.start();
-    Application.navigate("rest/19");
+    Application.navigate("rest/19", {trigger: true});
+    Application.adminLayoutView = adminLayoutView;
     return Application;
 
   }

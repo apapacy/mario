@@ -1,0 +1,77 @@
+<html>
+  <meta charset="utf-8">
+  <head>
+    <style>
+      body {
+        background-color: #efefef;
+        font-family: sans-serif;
+      }
+
+      .Demo {
+        max-width: 300px;
+        margin: 20px auto;
+        padding: 20px;
+        border: solid #d7d7d7;
+        border-width: 0 0 1px 0;
+        background-color: #fff;
+      }
+
+      .Demo-item {
+        position: relative;
+      }
+
+      .Input {
+        display: block;
+        width: 100%;
+        border: 1px solid #d7d7d7;
+        font-size: 16px;
+        list-style: none;
+      }
+
+      .Autocomplete {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: solid #d7d7d7;
+        border-width: 0 1px 1px;
+        position: absolute;
+        top: 100%;
+        z-index: 1;
+        background-color: #fff;
+      }
+
+      .Autocomplete-item {
+        display: block;
+        padding: 5px;
+        cursor: pointer;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .Autocomplete-item.is-selected {
+        font-weight: bold;
+      }
+
+      .Autocomplete-item.is-candidate,
+      .Autocomplete-item:hover {
+        background-color: #d7d7d7;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset class="Demo">
+      <legend class="Demo-title">Static data</legend>
+      <div class="Demo-item">
+        <input class="Input" type="text" id="input_static">
+      </div>
+    </fieldset>
+    <fieldset class="Demo">
+      <legend class="Demo-title">Async data</legend>
+      <div class="Demo-item">
+        <input class="Input" type="text" id="input_async">
+      </div>
+    </fieldset>
+    <script src="demo.min.js"></script>
+  </body>
+</html>

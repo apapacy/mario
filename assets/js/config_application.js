@@ -10,12 +10,13 @@ requirejs.config({
     "backbone": "../vendor/backbone/backbone-dev",
     "marionette": "../vendor/backbone.marionette/backbone.marionette",
     "twigjs": "../vendor/twig.js/twig.min",
+    "lodash": "../vendor/lodash.min",
     "twig": "../js/helpers/twigLoader",
     "text": "../vendor/text",
     "templates": "./templates",
     "localstorage": "../vendor/backbone/backbone.localStorage-min",
-    "lodash": "../vendor/lodash.min",
-    "application": "./"
+    "application": "./",
+    "model": "./entities"
   },
 
     shim: {

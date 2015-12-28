@@ -1,6 +1,6 @@
 define(["marionette", "backbone"
   , "twig!admin/layout"
-  , "application/views/admin/leftSideView"
+  , "application/views/admin/placesCollectionView"
   , "application/views/admin/mainView"
   , "application/views/admin/rightSideView"]
 , function(Marionette, Backbone

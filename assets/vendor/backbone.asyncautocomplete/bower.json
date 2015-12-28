@@ -1,0 +1,39 @@
+{
+  "name": "backbone.asyncautocomplete",
+  "main": "main.js",
+  "version": "1.2.0",
+  "authors": [
+    "Carl Törnqvist <calle.tornqvist@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "example"
+  ],
+  "description": "Autocomplete with async support as Backbone View",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "underscore": "^1.7.0"
+  },
+  "keywords": [
+    "backbone",
+    "view",
+    "async",
+    "autocomplete"
+  ],
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "jquery": "^2.1.1",
+    "qunitjs": "^1.15.0",
+    "requirejs": "^2.1.15"
+  }
+}
