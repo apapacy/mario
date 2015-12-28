@@ -1,11 +1,11 @@
 define(["marionette", "backbone"
   , "twig!admin/layout"
-  , "application/views/admin/placesCollectionView"
+  , "application/views/admin/regionsCollectionView"
   , "application/views/admin/mainView"
   , "application/views/admin/rightSideView"]
 , function(Marionette, Backbone
   , adminLayout
-  , adminLeftSideView
+  , regionsCollectionView
   , adminMainView
   , adminRightSideView) {
 
@@ -19,7 +19,7 @@ define(["marionette", "backbone"
     layoutView.render();
 
     layoutView.addRegion( "leftside", "#leftside");
-    layoutView.getRegion("leftside").show(adminLeftSideView);
+    layoutView.getRegion("leftside").show(regionsCollectionView);
 
     layoutView.addRegion( "main", "#main");
     layoutView.getRegion("main").show(adminMainView);
