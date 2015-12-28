@@ -12,6 +12,7 @@ define(["marionette", "backbone"
   var layoutView = new (Marionette.LayoutView.extend({
     template: adminLayout,
     el: "body",
+    model: new Backbone.Model({rand:Math.random()})
   }));
 
   layoutView.init = function() {

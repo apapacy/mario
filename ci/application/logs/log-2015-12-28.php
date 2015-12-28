@@ -2322,3 +2322,174 @@ INFO - 2015-12-28 20:18:59 --> Session: Class initialized using 'database' drive
 INFO - 2015-12-28 20:18:59 --> Controller Class Initialized
 INFO - 2015-12-28 20:18:59 --> Final output sent to browser
 DEBUG - 2015-12-28 20:18:59 --> Total execution time: 0.1576
+INFO - 2015-12-28 20:21:53 --> Config Class Initialized
+INFO - 2015-12-28 20:21:53 --> Hooks Class Initialized
+DEBUG - 2015-12-28 20:21:53 --> UTF-8 Support Enabled
+INFO - 2015-12-28 20:21:53 --> Utf8 Class Initialized
+INFO - 2015-12-28 20:21:53 --> URI Class Initialized
+INFO - 2015-12-28 20:21:53 --> Router Class Initialized
+INFO - 2015-12-28 20:21:53 --> Output Class Initialized
+INFO - 2015-12-28 20:21:53 --> Security Class Initialized
+DEBUG - 2015-12-28 20:21:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-12-28 20:21:53 --> Input Class Initialized
+INFO - 2015-12-28 20:21:53 --> Language Class Initialized
+INFO - 2015-12-28 20:21:53 --> Loader Class Initialized
+INFO - 2015-12-28 20:21:53 --> Helper loaded: url_helper
+INFO - 2015-12-28 20:21:53 --> Database Driver Class Initialized
+INFO - 2015-12-28 20:21:53 --> Email Class Initialized
+INFO - 2015-12-28 20:21:53 --> Session: Class initialized using 'database' driver.
+INFO - 2015-12-28 20:21:53 --> Controller Class Initialized
+INFO - 2015-12-28 20:21:53 --> Final output sent to browser
+DEBUG - 2015-12-28 20:21:53 --> Total execution time: 0.1246
+INFO - 2015-12-28 20:27:23 --> Config Class Initialized
+INFO - 2015-12-28 20:27:23 --> Hooks Class Initialized
+DEBUG - 2015-12-28 20:27:23 --> UTF-8 Support Enabled
+INFO - 2015-12-28 20:27:23 --> Utf8 Class Initialized
+INFO - 2015-12-28 20:27:23 --> URI Class Initialized
+INFO - 2015-12-28 20:27:23 --> Router Class Initialized
+INFO - 2015-12-28 20:27:23 --> Output Class Initialized
+INFO - 2015-12-28 20:27:23 --> Security Class Initialized
+DEBUG - 2015-12-28 20:27:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-12-28 20:27:23 --> Input Class Initialized
+INFO - 2015-12-28 20:27:23 --> Language Class Initialized
+INFO - 2015-12-28 20:27:23 --> Loader Class Initialized
+INFO - 2015-12-28 20:27:23 --> Helper loaded: url_helper
+INFO - 2015-12-28 20:27:23 --> Database Driver Class Initialized
+INFO - 2015-12-28 20:27:23 --> Email Class Initialized
+INFO - 2015-12-28 20:27:23 --> Session: Class initialized using 'database' driver.
+INFO - 2015-12-28 20:27:23 --> Controller Class Initialized
+INFO - 2015-12-28 20:27:23 --> Final output sent to browser
+DEBUG - 2015-12-28 20:27:23 --> Total execution time: 0.1503
+INFO - 2015-12-28 20:31:29 --> Config Class Initialized
+INFO - 2015-12-28 20:31:29 --> Hooks Class Initialized
+DEBUG - 2015-12-28 20:31:29 --> UTF-8 Support Enabled
+INFO - 2015-12-28 20:31:29 --> Utf8 Class Initialized
+INFO - 2015-12-28 20:31:29 --> URI Class Initialized
+INFO - 2015-12-28 20:31:29 --> Router Class Initialized
+INFO - 2015-12-28 20:31:29 --> Output Class Initialized
+INFO - 2015-12-28 20:31:29 --> Security Class Initialized
+DEBUG - 2015-12-28 20:31:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-12-28 20:31:29 --> Input Class Initialized
+INFO - 2015-12-28 20:31:29 --> Language Class Initialized
+INFO - 2015-12-28 20:31:29 --> Loader Class Initialized
+INFO - 2015-12-28 20:31:29 --> Helper loaded: url_helper
+INFO - 2015-12-28 20:31:29 --> Database Driver Class Initialized
+INFO - 2015-12-28 20:31:29 --> Email Class Initialized
+INFO - 2015-12-28 20:31:29 --> Session: Class initialized using 'database' driver.
+INFO - 2015-12-28 20:31:29 --> Controller Class Initialized
+INFO - 2015-12-28 20:31:29 --> Final output sent to browser
+DEBUG - 2015-12-28 20:31:29 --> Total execution time: 0.1282
+INFO - 2015-12-28 20:33:13 --> Config Class Initialized
+INFO - 2015-12-28 20:33:13 --> Hooks Class Initialized
+DEBUG - 2015-12-28 20:33:13 --> UTF-8 Support Enabled
+INFO - 2015-12-28 20:33:13 --> Utf8 Class Initialized
+INFO - 2015-12-28 20:33:13 --> URI Class Initialized
+INFO - 2015-12-28 20:33:13 --> Router Class Initialized
+INFO - 2015-12-28 20:33:13 --> Output Class Initialized
+INFO - 2015-12-28 20:33:13 --> Security Class Initialized
+DEBUG - 2015-12-28 20:33:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-12-28 20:33:13 --> Input Class Initialized
+INFO - 2015-12-28 20:33:13 --> Language Class Initialized
+INFO - 2015-12-28 20:33:13 --> Loader Class Initialized
+INFO - 2015-12-28 20:33:13 --> Helper loaded: url_helper
+INFO - 2015-12-28 20:33:13 --> Database Driver Class Initialized
+INFO - 2015-12-28 20:33:13 --> Email Class Initialized
+INFO - 2015-12-28 20:33:13 --> Session: Class initialized using 'database' driver.
+INFO - 2015-12-28 20:33:13 --> Controller Class Initialized
+INFO - 2015-12-28 20:33:13 --> Final output sent to browser
+DEBUG - 2015-12-28 20:33:13 --> Total execution time: 0.1887
+INFO - 2015-12-28 20:33:44 --> Config Class Initialized
+INFO - 2015-12-28 20:33:44 --> Hooks Class Initialized
+DEBUG - 2015-12-28 20:33:44 --> UTF-8 Support Enabled
+INFO - 2015-12-28 20:33:44 --> Utf8 Class Initialized
+INFO - 2015-12-28 20:33:44 --> URI Class Initialized
+INFO - 2015-12-28 20:33:44 --> Router Class Initialized
+INFO - 2015-12-28 20:33:44 --> Output Class Initialized
+INFO - 2015-12-28 20:33:44 --> Security Class Initialized
+DEBUG - 2015-12-28 20:33:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-12-28 20:33:44 --> Input Class Initialized
+INFO - 2015-12-28 20:33:44 --> Language Class Initialized
+INFO - 2015-12-28 20:33:44 --> Loader Class Initialized
+INFO - 2015-12-28 20:33:44 --> Helper loaded: url_helper
+INFO - 2015-12-28 20:33:44 --> Database Driver Class Initialized
+INFO - 2015-12-28 20:33:44 --> Email Class Initialized
+INFO - 2015-12-28 20:33:44 --> Session: Class initialized using 'database' driver.
+INFO - 2015-12-28 20:33:44 --> Controller Class Initialized
+INFO - 2015-12-28 20:33:44 --> Final output sent to browser
+DEBUG - 2015-12-28 20:33:44 --> Total execution time: 0.1693
+INFO - 2015-12-28 20:38:38 --> Config Class Initialized
+INFO - 2015-12-28 20:38:38 --> Hooks Class Initialized
+DEBUG - 2015-12-28 20:38:38 --> UTF-8 Support Enabled
+INFO - 2015-12-28 20:38:38 --> Utf8 Class Initialized
+INFO - 2015-12-28 20:38:38 --> URI Class Initialized
+INFO - 2015-12-28 20:38:38 --> Router Class Initialized
+INFO - 2015-12-28 20:38:38 --> Output Class Initialized
+INFO - 2015-12-28 20:38:38 --> Security Class Initialized
+DEBUG - 2015-12-28 20:38:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-12-28 20:38:38 --> Input Class Initialized
+INFO - 2015-12-28 20:38:38 --> Language Class Initialized
+INFO - 2015-12-28 20:38:38 --> Loader Class Initialized
+INFO - 2015-12-28 20:38:38 --> Helper loaded: url_helper
+INFO - 2015-12-28 20:38:38 --> Database Driver Class Initialized
+INFO - 2015-12-28 20:38:38 --> Email Class Initialized
+INFO - 2015-12-28 20:38:38 --> Session: Class initialized using 'database' driver.
+INFO - 2015-12-28 20:38:38 --> Controller Class Initialized
+INFO - 2015-12-28 20:38:39 --> Final output sent to browser
+DEBUG - 2015-12-28 20:38:39 --> Total execution time: 0.1680
+INFO - 2015-12-28 20:42:24 --> Config Class Initialized
+INFO - 2015-12-28 20:42:24 --> Hooks Class Initialized
+DEBUG - 2015-12-28 20:42:24 --> UTF-8 Support Enabled
+INFO - 2015-12-28 20:42:24 --> Utf8 Class Initialized
+INFO - 2015-12-28 20:42:24 --> URI Class Initialized
+INFO - 2015-12-28 20:42:24 --> Router Class Initialized
+INFO - 2015-12-28 20:42:24 --> Output Class Initialized
+INFO - 2015-12-28 20:42:24 --> Security Class Initialized
+DEBUG - 2015-12-28 20:42:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-12-28 20:42:24 --> Input Class Initialized
+INFO - 2015-12-28 20:42:24 --> Language Class Initialized
+INFO - 2015-12-28 20:42:24 --> Loader Class Initialized
+INFO - 2015-12-28 20:42:24 --> Helper loaded: url_helper
+INFO - 2015-12-28 20:42:24 --> Database Driver Class Initialized
+INFO - 2015-12-28 20:42:24 --> Email Class Initialized
+INFO - 2015-12-28 20:42:24 --> Session: Class initialized using 'database' driver.
+INFO - 2015-12-28 20:42:24 --> Controller Class Initialized
+INFO - 2015-12-28 20:42:24 --> Final output sent to browser
+DEBUG - 2015-12-28 20:42:24 --> Total execution time: 0.1831
+INFO - 2015-12-28 20:44:26 --> Config Class Initialized
+INFO - 2015-12-28 20:44:26 --> Hooks Class Initialized
+DEBUG - 2015-12-28 20:44:26 --> UTF-8 Support Enabled
+INFO - 2015-12-28 20:44:26 --> Utf8 Class Initialized
+INFO - 2015-12-28 20:44:26 --> URI Class Initialized
+INFO - 2015-12-28 20:44:26 --> Router Class Initialized
+INFO - 2015-12-28 20:44:26 --> Output Class Initialized
+INFO - 2015-12-28 20:44:26 --> Security Class Initialized
+DEBUG - 2015-12-28 20:44:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-12-28 20:44:26 --> Input Class Initialized
+INFO - 2015-12-28 20:44:26 --> Language Class Initialized
+INFO - 2015-12-28 20:44:26 --> Loader Class Initialized
+INFO - 2015-12-28 20:44:26 --> Helper loaded: url_helper
+INFO - 2015-12-28 20:44:26 --> Database Driver Class Initialized
+INFO - 2015-12-28 20:44:26 --> Email Class Initialized
+INFO - 2015-12-28 20:44:26 --> Session: Class initialized using 'database' driver.
+INFO - 2015-12-28 20:44:26 --> Controller Class Initialized
+INFO - 2015-12-28 20:44:26 --> Final output sent to browser
+DEBUG - 2015-12-28 20:44:26 --> Total execution time: 0.1650
+INFO - 2015-12-28 20:46:12 --> Config Class Initialized
+INFO - 2015-12-28 20:46:12 --> Hooks Class Initialized
+DEBUG - 2015-12-28 20:46:12 --> UTF-8 Support Enabled
+INFO - 2015-12-28 20:46:12 --> Utf8 Class Initialized
+INFO - 2015-12-28 20:46:12 --> URI Class Initialized
+INFO - 2015-12-28 20:46:12 --> Router Class Initialized
+INFO - 2015-12-28 20:46:12 --> Output Class Initialized
+INFO - 2015-12-28 20:46:12 --> Security Class Initialized
+DEBUG - 2015-12-28 20:46:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2015-12-28 20:46:12 --> Input Class Initialized
+INFO - 2015-12-28 20:46:12 --> Language Class Initialized
+INFO - 2015-12-28 20:46:12 --> Loader Class Initialized
+INFO - 2015-12-28 20:46:12 --> Helper loaded: url_helper
+INFO - 2015-12-28 20:46:12 --> Database Driver Class Initialized
+INFO - 2015-12-28 20:46:12 --> Email Class Initialized
+INFO - 2015-12-28 20:46:12 --> Session: Class initialized using 'database' driver.
+INFO - 2015-12-28 20:46:12 --> Controller Class Initialized
+INFO - 2015-12-28 20:46:12 --> Final output sent to browser
+DEBUG - 2015-12-28 20:46:12 --> Total execution time: 0.1743
