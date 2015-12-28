@@ -7,7 +7,8 @@ define(['backbone', 'marionette'
   return new (
     Marionette.CollectionView.extend({
       childView: placeItemView,
-      template: placesCollection_twig,
+      tagName: "ul",
+      //template: placesCollection_twig,
       collection: placesCollection
     })
   );
