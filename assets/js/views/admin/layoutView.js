@@ -19,13 +19,13 @@ define(["marionette", "backbone"
     layoutView.render();
 
     layoutView.addRegion( "leftside", "#leftside");
-    layoutView.getRegion("leftside").show(regionsCollectionView);
+    layoutView.getRegion("leftside").show(new regionsCollectionView);
 
     layoutView.addRegion( "main", "#main");
-    layoutView.getRegion("main").show(adminMainView);
+    layoutView.getRegion("main").show(new adminMainView);
 
     layoutView.addRegion( "rightside", "#rightside");
-    layoutView.getRegion("rightside").show(adminRightSideView);
+    layoutView.getRegion("rightside").show(new adminRightSideView);
   }
 
   return layoutView;

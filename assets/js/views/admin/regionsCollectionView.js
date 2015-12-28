@@ -4,7 +4,7 @@ define(['backbone', 'marionette'
 , function(Backbone, Marionette, regionItemView, regionsCollection) {
   var regions = new regionsCollection()
   regions.fetch();
-  return new (
+  return (
     Marionette.CollectionView.extend({
       childView: regionItemView,
       tagName: "ul",

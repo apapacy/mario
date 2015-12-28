@@ -3,7 +3,7 @@ define(['backbone', 'marionette'
   , 'model/placesCollection']
 , function(Backbone, Marionette, placeItemView, placesCollection) {
   //placesCollection.fetch();
-  return new (
+  return  (
     Marionette.CollectionView.extend({
       childView: placeItemView,
       tagName: "ul",

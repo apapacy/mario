@@ -4,7 +4,7 @@ define(["marionette"
 , function(Marionette
   , Backbone
   , adminMain) {
-    return new (
+    return (
       Marionette.ItemView.extend({
         template:adminMain
       }));

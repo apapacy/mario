@@ -4,7 +4,8 @@ define(["marionette"
 , function(Marionette
   , Backbone
   , adminRightSide) {
-    return new (
+    //var view = 
+    return (
       Marionette.ItemView.extend({
         template:adminRightSide
       }));
